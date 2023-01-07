@@ -1,0 +1,52 @@
+Activity 2
+
+Hub 
+
+1 URL: https://www.webhostinghub.com/
+2 description: This website uses the hub interaction design which starts with the home page. Then you are presenteed with several options under
+the small business tools. All of these links direct you to a page that describes the benefits for each of those tools but they are redirect to the
+same place. That place is the web hosting plans page. It is unique because it impleements the plan page into the page itself so all it does is
+it scrolls down so you see it when pressing the different buttons. 
+3 User goals accomplished: The goal accomplished here is that the site is directing the customers towards the same point of sale. No matter which 
+of the tools the users are learning about they are all being directed back to the offer of the different hosting plans being offered. 
+4 Improvement suggestions: An improvement suggestion I have for this is to add a sense of urgency factor as well. This can be done by adding a 
+pop up of customers purchasing a plan. Also adding reviews for the service can solidify the sale. Another is adding a countdown for the discount
+display saying it will end after 24 hours.
+
+Wizard 
+
+1 URL: https://www.gojctraining.com/webreg-st948369607?hop=02bucky
+2 description: This site is for a sales funnel that has a wizard pattern because it has steps and has a multi page procedure that has to be 
+completed in the correct order. The first has you sign up for a webinar, then you choose a date and time to attend. Next you get the webinar 
+page with a video that gives a presentation, and then you are lead to the closing page where something is being offered. In this case it is the 
+full course so that you can learn affiliate marketing. 
+3 User goals accomplished: The goal accomplished is that the user follows the exact order that the owner of the site wants them to follow. This
+is a very effective way of turning a completely cold lead into a sale. The user slowly learns more and more until they are convinced and finally 
+closed on the sale of the course. 
+4 Improvement suggestions: An improvement I would suggest is adding a countdown feature to make the sale feel more urgent. Besides that I think that
+sales funnels are a great way to close a customer it leads them exactly how you want them to go. 
+
+Guide 
+
+1 URL: https://www.footlocker.com/
+2 description: This website is an example of a guide because it does have complex parts but also tries to be like a wizard design. You can navigate
+the home page and see the new arrivals, womens, mens and kids shoes/clothing. They all want to lead you to the cart/checkout page but you can navigate
+back and forth because that it was shopping looks like. It is not a linear process all the time. Sometimes you are just shopping around and never
+make your way to the checkout and sometimes you do. 
+3 User goals accomplished: The goal accomplsihed here is that the user has the shoppping experience they could have at a mall but they are doung
+it from the comfort of their home. The to cart button is there for every item so they can effortlessly add it and then are always reminded to checkout.
+This makes a comfortable shopping experience. 
+4 Improvement suggestions: A suggestion I have to make it better is to have an algorithm that pushes the most popular items to the top of the search.
+users have a short attention span so it would be better to capture their attention with the items that have been selling the best. 
+
+Progressive disclosure 
+
+1 URL: https://www.netflix.com/browse
+2 description: This website uses the Progressive disclosure design because it doesnt overwhelm the user with all the features that the website has.
+this is because most users only want to browse the shows and movies that are available and rarely user the other features like settings, alerts, 
+dvd, and kids section. 
+3 User goals accomplished: This keeps the users more enganged which is the ultimate goal. They are still able to use the other features of the website
+but they dont feel overhwlemed by all the options they are presented with. 
+4 Improvement suggestions: What I would improve is the algorithm that makes it so that the shows you are most likely to watch are displayed up top.
+I would also remove the feature that when you are hovering over a show it starts playing a short everytime you hover. It should only play
+the short video for those shows you are unfamiliar with. 

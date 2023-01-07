@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Lab 1">
+    <title>Lab 1 </title>
+</head>
+
+<body>
+    <div id="Lab1--Part1">
+        <div class="part1--container"></div>
+        <h1>Lab 1: HTML5 New Inputs  </h1>
+        <h3>Please fill out all form fields before submission</h3>
+        <form action="https://postman-echo.com/get?" method="get">
+            <!-- Color -->
+            <label>Color: </label>
+            <input type="color" value="#1b881b" name="ivan_color" id="color"> <br />
+            <!-- Checkbox -->
+            <label>Checkbox: </label>
+            <input type="checkbox" value="#1b881b" name="ivan_checkbox" id="checkbox"> <br />
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="Task">
+            <label for="checkbox1">Task number 1</label><br>
+            <!-- Radio -->
+            <label>Radio: </label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <!-- Datetime-local -->
+            <label>Datetime-local: </label>
+            <input type="datetime-local" name="ivan_datetime-local" id="datetime"> <br />
+            <!-- Month -->
+            <label>Month: </label>
+            <input type="month" name="ivan_month" id="month"> <br />
+
+            <!-- Range -->
+            <label>Range: </label>
+            <input 
+                type="range" 
+                value="1" 
+                min="5"
+                max="25" 
+                onChange=updateRangeText(this.value) 
+                name="ivan_range"
+                id="range"
+            >
+            <input type="text" id="rangeVal" value="">
+            <br />
+            <!-- Button -->
+            <label>Button: </label>
+            <input class="favorite styled"
+             type="button"
+            value="Add to favorites"><br>
+
+            <!-- Time -->
+            <label>Time: </label>
+            <input type="time" name="ivan_time" id="time"> <br />
+ 
+            <!-- Week -->
+            <label>Week: </label>
+            <input type="week" name="ivan_week" id="week"> <br />
+
+
+            <!-- Submit Form -->
+            <input type="submit" value="Submit" onClick="submitForm()">
+        </form>
+    </div>
+
+    <!-- Script for lab Part B to submit form and tell user if they missed a field -->
+    <script>
+        function submitForm() {
+            let ids = [];
+            ids.push(document.getElementById("color").value);
+            ids.push(document.getElementById("date").value);
+            ids.push(document.getElementById("datetime").value);
+            ids.push(document.getElementById("email").value);
+            ids.push(document.getElementById("month").value);
+            ids.push(document.getElementById("number").value);
+            ids.push(document.getElementById("range").value);
+            ids.push(document.getElementById("search").value);
+            ids.push(document.getElementById("tel").value);
+            ids.push(document.getElementById("time").value);
+            ids.push(document.getElementById("url").value);
+            ids.push(document.getElementById("week").value);
+            ids.push(document.getElementById("rtn").value);
+
+            let flag = checkIds(ids);
+
+            if (!flag) {
+                throwAlert();
+            } else {
+                alert("Success! Form submitted");
+            }
+        };
+
+        function checkIds(idArr) {
+            for (let i = 0; i < idArr.length; i++) {
+                if (idArr[i] === "" || idArr[i] === null) {
+                    // console.log("false");
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        function throwAlert() {
+            alert("Please fill in all the form fields before submitting.");
+        };
+
+        // update the value from the range slider on change
+        function updateRangeText(val) {
+            document.getElementById("rangeVal").value = val;
+        }
+    </script>
+
+</body>
+
+</html>

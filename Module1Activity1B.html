@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Lab 1">
+    <title>Lab 1 </title>
+</head>
+
+<body>
+    <div id="Lab1--Part1">
+        <div class="part1--container"></div>
+        <h1>Lab 1: HTML5 New Inputs  </h1>
+        <h3>Please fill out all form fields before submission</h3>
+        <form action="https://postman-echo.com/get?" method="get">
+
+            <!-- Part B: Pattern Validation - Routing Number -->
+            <style>
+                input[id="rtn"]:invalid {
+                    outline: 1px solid red
+                }
+                input[id="rtn"]:valid {
+                    outline: 1px solid green
+                }
+                input[id="rtn"] {
+                    width: 425px;
+                }
+            </style>
+            <label>Routing Number: </label>
+            <input 
+                type="text" 
+                pattern="([0-9]{9})\s([0-9]{12})\s([0-9]{4})"
+                placeholder="9-digit checking number 12-digit routing number 4-digit check number" 
+                name="ibarraz5_RTN"
+                id="rtn"
+            > 
+            <br /><br />
+
+            <!-- Submit Form -->
+            <input type="submit" value="Submit" onClick="submitForm()">
+        </form>
+    </div>
+
+    <!-- Script for lab Part B to submit form and tell user if they missed a field -->
+    <script>
+        function submitForm() {
+            let ids = [];
+
+            ids.push(document.getElementById("rtn").value);
+
+            let flag = checkIds(ids);
+
+            if (!flag) {
+                throwAlert();
+            } else {
+                alert("Success! Form submitted");
+            }
+        };
+
+        function checkIds(idArr) {
+            for (let i = 0; i < idArr.length; i++) {
+                if (idArr[i] === "" || idArr[i] === null) {
+                    // console.log("false");
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        function throwAlert() {
+            alert("Please fill in all the form fields before submitting.");
+        };
+
+        // update the value from the range slider on change
+        function updateRangeText(val) {
+            document.getElementById("rangeVal").value = val;
+        }
+    </script>
+
+</body>
+
+</html>
